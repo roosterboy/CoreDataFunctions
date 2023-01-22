@@ -15,7 +15,7 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
             let newEmployee = Employee(context: viewContext)
-            newEmployee.employeeType = "Employee"
+            newEmployee.type = "Employee"
             newEmployee.salary = Double.random(in: 60_000...140_000)
         }
         do {
